@@ -1,4 +1,4 @@
-# NEMO: ML-Based Fish Species Classification App
+# Nemo: Intelligent Fish Species Identification & Insights
 
 A lightweight Android application that allows fishermen and marine enthusiasts to instantly identify fish species using a machine-learning model. Simply install the APK, snap a photo of a catch, and see the predicted species — no internet required for on-device inference.
 
