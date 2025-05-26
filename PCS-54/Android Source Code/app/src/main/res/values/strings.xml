@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NEMO</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="location">Location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="problemstatement">INCOIS is providing Marine Fishery Advisory Services to the fishermen. To evaluate its accuracy and in order to develop species-specific advisories it is necessary to collect the fish-catch information at the species level. While fisherfolk are supportive to these efforts, often species level catch reporting is having hinderances due to several reasons pertaining to manual efforts which results to low or erroneous reporting. We will be developing AI-ML based tool for image-based identification of fish-species found in the Indian seas. The images of fishes may be taken from online image searches. INCOIS will be able to use this for its fishermen feedback app, where fishermen need to take a photo of fishes caught and fish-identification will be done through code, minimizing the manual intervention.</string>
+</resources>

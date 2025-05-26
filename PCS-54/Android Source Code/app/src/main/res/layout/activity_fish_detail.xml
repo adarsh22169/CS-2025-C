@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fish_detail">
+
+    <ImageView
+        android:id="@+id/fish_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_208sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/fish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold"
+        android:text="Fish Name"
+        android:textColor="@color/theme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_image" />
+
+    <TextView
+        android:id="@+id/fish_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        android:drawableStart="@drawable/baseline_location_pin_24"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Fish Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_name" />
+
+    <TextView
+        android:id="@+id/fish_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        android:drawableStart="@drawable/coordinates"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Coordinates"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_location" />
+
+    <TextView
+        android:id="@+id/fish_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        android:drawableStart="@drawable/baseline_wb_sunny_24"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_coordinates" />
+
+    <TextView
+        android:id="@+id/fish_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        android:drawableStart="@drawable/pressure"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Pressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_temperature" />
+
+    <TextView
+        android:id="@+id/fish_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        android:drawableStart="@drawable/humidity"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Humidity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_pressure" />
+
+    <TextView
+        android:id="@+id/fish_windspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:textSize="@dimen/_15ssp"
+        android:drawableStart="@drawable/wind"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Wind Speed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_humidity" />
+
+    <TextView
+        android:id="@+id/fish_capturedon"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/outline_access_time_filled_24"
+        android:drawablePadding="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Capture Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish_windspeed" />
+
+    <TableLayout
+        android:id="@+id/table"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/fish_capturedon"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            android:text="Nutrition Facts"
+            android:textSize="@dimen/_20ssp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:textStyle="bold"
+            />
+
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            >
+
+            <TextView
+                android:text="Amount per 100g"
+                android:textSize="@dimen/_20ssp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:textStyle="italic"
+                />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvCalories" android:text="Calories (kcal)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="start"
+                android:paddingStart="@dimen/_10sdp"/>
+
+
+            <TextView
+                android:id="@+id/Calories" android:text="92"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end"
+                android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+        <!-- Row 3 with 3 columns -->
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvTotalFat" android:text="Total Fat (g)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/TotalFat" android:text="2"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvSaturatedFat" android:text="Saturated Fat (g)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/SaturatedFat" android:text="1"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvCholestrol" android:text="Cholestrol (mg)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/Cholestrol" android:text="60"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvSodium" android:text="Sodium (mg)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/Sodium" android:text="0"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvPotassium" android:text="Potassium (mg)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/Potassium" android:text="0"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvTotalCarbohydrate" android:text="Total Carbohydrate (g)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/TotalCarbohydrate" android:text="0"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvDietaryfiber" android:text="Dietary fiber (g)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/Dietaryfiber" android:text="0"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/TvProtein" android:text="Protein (g)"
+                android:layout_weight="2" android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:paddingStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp" android:gravity="start"/>
+
+
+            <TextView
+                android:id="@+id/Protein" android:text="18"
+                android:layout_weight="1" android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="@dimen/_5sdp" android:gravity="end" android:paddingEnd="@dimen/_15sdp"/>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/knowmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="To know more :  "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table" />
+
+    <TextView
+        android:id="@+id/tvKnowmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:text="Click here"
+        android:textStyle="italic"
+        android:textColor="@color/theme"
+        app:layout_constraintStart_toEndOf="@+id/knowmore"
+        app:layout_constraintTop_toBottomOf="@+id/table" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
