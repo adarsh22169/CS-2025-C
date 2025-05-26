@@ -9,13 +9,7 @@ function MindcareServices() {
       features: ["Mood Tracking", "Stress Analysis", "Personalized Support"],
       link: "/services/emotional-monitoring"
     },
-    // {
-    //   title: "AR Meditation Sessions",
-    //   icon: "vr-cardboard",
-    //   description: "Immersive virtual reality meditation environments designed specifically for adolescent mental wellness and anxiety reduction.",
-    //   features: ["Guided Sessions", "Calming Environments", "Progress Tracking"],
-    //   link: "/services/vr-meditation"
-    // },
+    
     {
       title: "Mental Health Resources",
       icon: "book",
@@ -23,13 +17,7 @@ function MindcareServices() {
       features: ["Interactive Lessons", "Progress Quizzes", "Resource Library"],
       link: "/services/mental-health-education"
     },
-    // {
-    //   title: "Parent-Teen Connection Tools",
-    //   icon: "people",
-    //   description: "Digital tools designed to improve communication between parents and adolescents about mental health concerns and emotional wellbeing.",
-    //   features: ["Guided Conversations", "Shared Activities", "Communication Tips"],
-    //   link: "/services/parent-teen-tools"
-    // },
+    
     {
       title: "Doctor-Patient Consultation",
       icon: "headset",
