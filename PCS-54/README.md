@@ -63,16 +63,16 @@ A lightweight Android application that allows fishermen and marine enthusiasts t
 ## 📸 Screenshots
 
 1. **Login / Sign-Up Screen**  
-   ![Login Screen](./screenshots/login.png)
+   <img src="screenshots/login.png" alt="Login Screen" width="300"/>
 
-2. **Fish Capture & Prediction**  
-   ![Capture Screen](./screenshots/capture.png)
+3. **Fish Capture & Prediction**  
+   <img src="screenshots/capture.png" alt="Capture Screen" width="300"/>
 
-3. **Prediction Result & Nutritional Info**  
-   ![Result Screen](./screenshots/result.png)
+5. **Prediction Result & Nutritional Info**  
+   <img src="screenshots/result.png" alt="Result Screen" width="300"/>
 
-4. **Catch History Overview**  
-   ![History Screen](./screenshots/history.png)
+7. **Catch History Overview**  
+   <img src="screenshots/history.png" alt="History Screen" width="300"/>
 
 ---
 
